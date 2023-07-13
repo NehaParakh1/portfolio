@@ -666,20 +666,6 @@ position:relative;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @keyframes slideRight{
     0%{
         transform: translateX(-100px);
@@ -724,3 +710,246 @@ position:relative;
         opacity:1;
     }
 }
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  
+    .header {
+      padding: 15px 5%;
+    }
+  
+    .logo {
+      display: none;
+    }
+  
+    .navbar {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 20px;
+   
+      z-index: 999;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+  
+    .navbar .menu-icon {
+      font-size: 24px;
+      cursor: pointer;
+      display: block;
+    }
+  
+  
+        .navbar ul {
+            display: none;
+            list-style: none;
+          }
+    
+          .navbar ul.open {
+            display: block;
+            position: fixed;
+            top: 40px;
+            left: 0;
+            width: 180px; /* Adjust the width as per your preference */
+            height: 220px;
+            background-color: #11264d; 
+            padding: 20px;
+            transition: all 0.3s ease;
+            z-index: 999;
+          }
+          
+    .navbar ul li {
+      margin-bottom: 20px;
+    }
+  
+    .navbar ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+  
+    .navbar ul li a:hover {
+      color: #666;
+    }
+  
+    .home {
+      position: relative;
+      overflow: hidden;
+      margin-top: 70px;
+    }
+  
+    .home-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+      z-index: 1;
+    }
+  
+    .home-content h3 {
+      font-size: 24px;
+    }
+  
+    .home-content h1 {
+      font-size: 40px;
+    }
+  
+    .home-content p {
+      font-size: 16px;
+    }
+  
+    .btn-box {
+      font-size: 14px;
+      padding: 10px 25px;
+    }
+  
+    .about {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 2rem;
+      z-index: 0;
+    }
+  
+    .about-img img {
+      margin: 0 auto;
+      max-width: 100%;
+    }
+  
+    .about-text h2 {
+      font-size: 40px;
+    }
+  
+    .about-text h4 {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+  
+    .about-text p {
+      font-size: 14px;
+      margin-bottom: 2rem;
+    }
+  
+    .container1 {
+      width: 100%;
+      padding: 50px 5%;
+    }
+  
+    .heading1 {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+  
+    .Technical-bars .bar {
+      margin-top: 20px;
+    }
+  
+    .Technical-bars .info span {
+      font-size: 14px;
+    }
+  
+    .Technical-bars .progress-line span::after {
+      font-size: 10px;
+    }
+  
+    .radial-bars .radial-bar {
+      height: 140px;
+    }
+  
+    .radial-bar .percentage {
+      font-size: 14px;
+    }
+  
+    .radial-bar .text {
+      font-size: 14px;
+    }
+  
+    .portfolio-content {
+      padding-top: 60px;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  
+    .row img {
+      border-radius: 4px;
+    }
+  
+    .row:hover img {
+      transform: none;
+    }
+  
+    .layer {
+      padding: 0 20px;
+    }
+  
+    .layer h5 {
+      font-size: 16px;
+    }
+  
+    .layer p {
+      font-size: 12px;
+    }
+  
+    .layer i {
+      font-size: 18px;
+      width: 40px;
+      height: 40px;
+    }
+  
+    .contact {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 2rem;
+      padding-left: 0;
+      margin-top: 60px;
+    }
+  
+    .contact-text h2 {
+      font-size: 40px;
+    }
+  
+    .contact-text h4 {
+      font-size: 16px;
+    }
+  
+    .contact-text p {
+      font-size: 14px;
+      line-height: 26px;
+      margin-bottom: 1.5rem;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      font-size: 14px;
+      padding: 12px;
+      margin-bottom: 0.5rem;
+      box-sizing: border-box;
+    }
+  
+    .contact-form textarea {
+      height: 150px;
+    }
+  
+    .contact-form form .send {
+      padding: 10px 50px;
+      font-size: 14px;
+    }
+  
+    /* Additional CSS to fix overlapping issue */
+    .home {
+      padding-top: 100px; /* Adjust the padding to prevent overlap with the navbar */
+    }
+  
+    .about {
+      margin-top: 0;
+      padding-top: 70px;
+    }
+  }
+  
