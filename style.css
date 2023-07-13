@@ -479,7 +479,8 @@ section{
     overflow:hidden;
     border-radius: 8px;
     cursor:pointer;
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 .row img{
@@ -713,7 +714,7 @@ position:relative;
     }
 }
 
-/* Media query for screens smaller than 768px */
+
 @media (max-width: 768px) {
     body {
       font-size: 14px;
@@ -757,7 +758,7 @@ position:relative;
             position: fixed;
             top: 40px;
             left: 0;
-            width: 180px; /* Adjust the width as per your preference */
+            width: 180px;
             height: 220px;
             background-color: #11264d; 
             padding: 20px;
@@ -944,9 +945,8 @@ position:relative;
       font-size: 14px;
     }
   
-    /* Additional CSS to fix overlapping issue */
     .home {
-      padding-top: 100px; /* Adjust the padding to prevent overlap with the navbar */
+      padding-top: 100px; 
     }
   
     .about {
