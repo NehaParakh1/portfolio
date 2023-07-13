@@ -37,7 +37,9 @@ background: #081b29;
    opacity: 0;
    animation: slideRight 1s ease forwards;
 }
-
+.navbar .menu-icon{
+    display: none;
+}
 .navbar a{
     display: inline-block;
     font-size: 25px;
@@ -926,7 +928,7 @@ position:relative;
   
     .contact-form input,
     .contact-form textarea {
-      width: 100%;
+      width: 90%;
       font-size: 14px;
       padding: 12px;
       margin-bottom: 0.5rem;
